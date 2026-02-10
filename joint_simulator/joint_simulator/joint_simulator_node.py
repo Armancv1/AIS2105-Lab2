@@ -4,8 +4,6 @@ from std_msgs.msg import Float64
 from rcl_interfaces.msg import SetParametersResult
 from pid_controller_msgs.srv import SetReference
 
-
-
 class jointSimulator:
     def __init__(self, angle, angular_velocity, voltage, K, T, noise):
         self.angle = angle
